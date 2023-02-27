@@ -4,6 +4,7 @@ zenigma.sh, is a shell script which append "Hello Zenigma!" for every 15 seconds
 
 If you need too run the shell script as a daemon process,
 
+    chmod +x /path/zenigma.sh #make script executable
     nohup ./zenigma.sh > zenigma.out 2>&1 &
     
 Or, you can add zenigma.sh to /etc/systemd/system to run it as a service, 
