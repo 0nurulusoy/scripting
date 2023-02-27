@@ -33,4 +33,5 @@ Instead of constantly running this script as a daemon or service, we will be usi
 
     #make script executable
     chmod +x /record_counter.sh 
+    #run the below command to schecule a cronjob, or manually add it to cron file with crontab -e
     echo "*/5 * * * * /record_counter.sh" | crontab - 
