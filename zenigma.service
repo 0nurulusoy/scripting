@@ -4,6 +4,8 @@ After=network.target
 
 [Service]
 ExecStart=!/bin/bash /root/zenigma.sh
+StandardOutput=append:/var/log/zenigma.log
+StandardError=append:/var/log/zenigma.log
 
 [Install]
 WantedBy=multi-user.target
