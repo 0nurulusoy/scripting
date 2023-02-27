@@ -14,3 +14,4 @@ Or, you can add zenigma.sh to /etc/systemd/system to run it as a service,
     systemctl enable zenigma.service #if you want it to start on the boot.
     systemctl start zenigma.service
 
+record_counter.sh, will count records and when it reaches to 20, will delete the previous records.
