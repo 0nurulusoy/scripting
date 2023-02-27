@@ -1,8 +1,8 @@
 #!/bin/bash
 
-log_file=zenigma.log
-script_file=zenigma.sh
-killer_log=killer.log
+log_file=/your_path/zenigma.log
+script_file=/your_path/zenigma.sh
+killer_log=/your_path/killer.log
 
 while true
 do
