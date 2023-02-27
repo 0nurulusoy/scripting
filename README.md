@@ -14,4 +14,12 @@ Or, you can add zenigma.sh to /etc/systemd/system to run it as a service,
     systemctl enable zenigma.service #if you want it to start on the boot.
     systemctl start zenigma.service
 
-record_counter.sh, will count records and when it reaches to 20, will delete the previous records.
+record_counter.sh, will count records and when it reaches to 20, will delete the previous records,
+    
+    chmod +x /path/record_counter.sh #make script executable
+    nohup ./record_counter.sh > record_counter.out 2>&1 &
+    
+counter_with_logging.sh will do the same with above script but, will be logging the activities such as time, line count, and file deletion status.
+    
+    chmod +x /path/record_counter.sh #make script executable,
+    nohup ./record_counter.sh & #since the script itself has logging options, do not add sterr and stout paramters to nohup command.
