@@ -33,6 +33,6 @@ counter_with_logging.sh will do the same with above script but, will be logging 
 Instead of constantly running this script as a daemon or service, we will be using crontab to schedule it with 5 mins of periods.  
 
     #make script executable also need to x zenigma.sh since it included inside of counter.sh
-    chmod +x record_counter.sh 
+    chmod +x counter_with_logging.sh
     #run the below command to schecule a cronjob, or manually add it to cron file with crontab -e
     echo "*/5 * * * * /record_counter.sh" | crontab - 
