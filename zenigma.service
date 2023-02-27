@@ -1,0 +1,9 @@
+[Unit]
+Description= Zenigma Script Service
+After=network.target
+
+[Service]
+ExecStart=!/bin/bash /root/zenigma.sh
+
+[Install]
+WantedBy=multi-user.target
