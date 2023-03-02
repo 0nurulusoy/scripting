@@ -33,4 +33,4 @@ DON'T Forget To Define The Script and Log Output Paths Before Running the Below 
     #make script executable also need to x zenigma.sh since it included inside of counter.sh
     chmod +x counter_with_logging.sh
     #run the below command to schecule a cronjob, or manually add it to cron file with crontab -e
-    echo "*/5 * * * * /record_counter.sh" | crontab - 
+    echo "*/5 * * * * /counter_with_logging.sh" | crontab - 
